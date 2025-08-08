@@ -1,4 +1,4 @@
-// Show navbar after scrolling past home section
+// Show navbar after scrolling past home section with fade & slide animation
 window.addEventListener("scroll", () => {
   const navbar = document.getElementById("navbar");
   const home = document.getElementById("home");
@@ -8,15 +8,15 @@ window.addEventListener("scroll", () => {
   const homeHeight = home.offsetHeight;
 
   if (window.scrollY > homeHeight - 50) {
-    navbar.classList.remove("hidden");
     navbar.classList.add("visible");
+    navbar.classList.remove("hidden");
   } else {
     navbar.classList.add("hidden");
     navbar.classList.remove("visible");
   }
 });
 
-// Smooth scroll
+// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();

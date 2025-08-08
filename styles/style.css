@@ -19,6 +19,25 @@ html {
   overflow-x: hidden;
 }
 
+header {
+  position: fixed;
+  top: -60px; /* hidden above */
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: top 0.5s ease, opacity 0.5s ease;
+  z-index: 1000;
+}
+
+header.show {
+  top: 0; /* slide into place */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
 
 /*--- Navbar ------------------------------------------------------------ */
 
@@ -63,6 +82,19 @@ html {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+} 
+
+
+#navbar {
+  position: fixed;
+  top: -60px; /* hidden above */
+  width: 100%;
+  pointer-events: none;
+  transition: top 0.5s ease, opacity 0.5s ease;
   z-index: 1000;
 }
 
