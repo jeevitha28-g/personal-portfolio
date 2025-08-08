@@ -34,7 +34,7 @@ portfolio-website/
 ## 💻 Tech Stack
 - **HTML5** – Structure and layout.  
 - **CSS3** – Styling and responsiveness.  
-- **JavaScript (Vanilla JS)** – Interactivity and smooth scrolling.  
+- **JavaScript** – Interactivity and smooth scrolling.  
 - **Font Awesome** – Icons for UI enhancement.
 
 ---
@@ -46,7 +46,7 @@ You can view the live version here: **[Portfolio Website](https://jeevitha28-g.g
 Or run locally:
 ```bash
 git clone https://github.com/jeevitha28-g/personal-portfolio.git
-cd portfolio-website
+cd personal-portfolio
 open index.html
 ```
 
