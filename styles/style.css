@@ -469,8 +469,14 @@ header.show {
 .experience-section {
   padding: 50px 80px;
   background-color: #f8f8f8;
-  min-height: 80vh;
+  min-height: 100vh;
   width: 100%;
+}
+
+.experience-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .experience-section .section-title {
@@ -495,6 +501,13 @@ header.show {
   background-color: #000;
   border-radius: 5px;
   margin-bottom: 40px;
+}
+
+.experience-text p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
 .experience-item {
@@ -526,8 +539,20 @@ header.show {
 }
 
 .experience-list li {
-  margin-bottom: 8px;
   font-size: 18px;
+}
+
+.experience-img img {
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 220px;
+  margin-left: 80px;
+}
+
+.experience-text, .experience-img {
+  flex: 0 0 50%;
 }
 
 
@@ -767,6 +792,16 @@ header.show {
     text-align: center;
   }
 
+  .experience-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .experience-img img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
 }
 
 /* Mobile Landscape & Small Tablets (≤ 768px) */
@@ -786,7 +821,7 @@ header.show {
   .skills-section,
   .experience-section,
   .projects-section {
-    padding: 30px 20px;
+    padding: 60px 20px;
   }
 
   .skill-card {
@@ -824,6 +859,30 @@ header.show {
     display: block;
   }
 
+  .experience-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .experience-list {
+    padding-left: 0; /* Remove list indent */
+    list-style: none;
+  }
+
+  .experience-content {
+    flex-direction: column;
+  }
+
+  .experience-text {
+    order: 1;
+    width: 100%;
+  }
+
+  .experience-img {
+    order: 2;
+    width: 100%;
+  }
+
 }
 
 /* Mobile Portrait (≤ 480px) */
@@ -833,25 +892,95 @@ header.show {
     gap: 15px;
     margin-right: 0;
     align-items: center;
+    margin-right: 60px;
+  }
+   
+  .about-section .section-title,
+  .education-section .section-title,
+  .skills-section .section-title,
+  .experience-section .section-title,
+  .projects-section .section-title{
+    font-size: 35px;
   }
 
-  .home-section {
-    padding: 10px;
+  .underline3, .underline5, .underline7,
+  .underline9, .underline11 {
+    height: 5px;
+    width: 120px;
   }
+
+  .underline4, .underline6, .underline8,
+  .underline10, .underline12 {
+    width: 80px;
+    height: 4px;
+  }
+
+
+  /*--- Home Section -----------------------*/
 
   .welcome {
-    font-size: 40px;
+    margin-top: 60px;
+    font-size: 50px;
   }
 
   .iam {
     font-size: 16px;
   }
 
-  .name,
-  .surname {
-    font-size: 60px;
+  .name {
+    margin-top: 40px;
+    margin-right: 80px;
+    font-size: 80px;
   }
 
+  .surname {
+    margin-left: 50px;
+    font-size: 80px;
+    margin-bottom: 50px;
+  }
+
+  .underline1 {
+    height: 5px;
+    width: 150px;
+    margin-left: 35px;
+  }
+
+  .underline2 {
+    width: 180px;
+    margin-left: 70px;
+  }
+
+
+  /*--- About Section ---------------------------*/
+
+  .about-text p {
+    padding-right: 30px;
+    font-size: 15px;
+  }
+
+  /*--- Education Section---------------------------*/
+
+  .education-item {
+    padding-right: 30px;
+    padding-bottom: 5px;
+  }
+
+  .education-item h3 {
+    font-size: 18px;
+  }
+
+  .education-item .institution {
+    font-size: 15px;
+    margin-top: 0;
+  }
+  .education-item .duration, 
+  .education-item .details {
+    font-size: 15px;
+  }
+
+
+  /*--- Skills Section ------------------------------*/
+  
   .skill-cards {
     gap: 20px;
   }
@@ -863,6 +992,61 @@ header.show {
   .tech-grid span {
     font-size: 14px;
     padding: 8px;
+  }
+  
+  .tech-categories {
+    gap: 7px;
+  }
+
+  /*--- Experience Section---------------------------*/
+
+  .experience-section .section-title {
+    text-align: left;
+  }
+
+  .experience-item {
+    padding-right: 30px;
+    text-align: left;
+  }
+
+  .experience-item h3 {
+    font-size: 21px;
+  }
+
+  .experience-item .company,
+  .experience-item .duration {
+    font-size: 16px;
+    margin-top: 0;
+  }
+   
+  .experience-list li {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .experience-content {
+    flex-direction: column;
+  }
+
+  .experience-text {
+    order: 1;
+    width: 100%;
+  }
+
+  .experience-img {
+    order: 2;
+    width: 100%;
+  }
+
+  .experience-img img {
+    margin-top: 0;
+    margin-right: 10%;
+  }
+
+  /*--- Contact ------------------------------*/
+
+  .contact-section {
+    height: 35vh;
   }
 }
 
