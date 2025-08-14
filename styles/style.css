@@ -976,6 +976,10 @@ header.show {
     text-align: center;
   }
 
+  .home-section .scroll-down {
+    top: 85%;
+  }
+
 
   /*--- About Section ---------------------------*/
 
