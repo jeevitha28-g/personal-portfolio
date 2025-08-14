@@ -935,7 +935,7 @@ header.show {
   /*--- Home Section -----------------------*/
 
   .welcome {
-    margin-top: 40%;
+    margin-top: 35%;
     font-size: 50px;
   }
 
@@ -977,7 +977,7 @@ header.show {
   }
 
   .home-section .scroll-down {
-    top: 85%;
+    top: 80%;
   }
 
 
