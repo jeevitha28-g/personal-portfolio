@@ -859,6 +859,20 @@ header.show {
     display: block;
   }
 
+  .home-section .home-image {
+    display: none; 
+  }
+
+  .home-section {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-section .scroll-down {
+    top: 90%;
+  }
+
   .experience-section {
     grid-template-columns: 1fr;
     text-align: center;
@@ -890,9 +904,7 @@ header.show {
   #navbar nav ul {
     flex-direction: column;
     gap: 15px;
-    margin-right: 0;
     align-items: center;
-    margin-right: 60px;
   }
 
   #navbar.visible .logo{
@@ -923,7 +935,7 @@ header.show {
   /*--- Home Section -----------------------*/
 
   .welcome {
-    margin-top: 60px;
+    margin-top: 50%;
     font-size: 50px;
   }
 
@@ -952,6 +964,16 @@ header.show {
   .underline2 {
     width: 180px;
     margin-left: 70px;
+  }
+
+  .home-section .home-image {
+    display: none; 
+  }
+
+  .home-section {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
   }
 
 
